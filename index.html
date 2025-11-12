@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login • Simple Training</title>
+  <link rel="stylesheet" href="assets/app.css"/>
+  <script defer src="assets/config.js"></script>
+  <script defer src="assets/auth.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <h1>Simple Training • Login</h1>
+      <p class="footer">Enter your details to continue.</p>
+      <div class="row">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" placeholder="e.g., Micah Lackey"/>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" placeholder="e.g., micah@example.com"/>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="username">Username</label>
+          <input id="username" placeholder="e.g., student"/>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Password"/>
+        </div>
+      </div>
+      <div style="margin-top:12px">
+        <button id="loginBtn">Log In</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>About</h3>
+      <p>This demo uses client-side login for simplicity. Completions and scores are logged to your Google Sheet via Apps Script.</p>
+    </div>
+  </main>
+</body>
+</html>

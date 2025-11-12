@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modules • Simple Training</title>
+  <link rel="stylesheet" href="assets/app.css"/>
+  <script defer src="assets/config.js"></script>
+  <script defer src="assets/auth.js"></script>
+  <script defer src="assets/modules.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <div class="flex" style="justify-content:space-between">
+        <div>
+          <h1>Training Modules</h1>
+          <div id="studentInfo" class="footer"></div>
+        </div>
+        <div><button id="logoutBtn">Log out</button></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Module List</h2>
+      <div id="moduleList" class="list"></div>
+      <div id="testUnlock" class="hidden">
+        <hr/>
+        <div class="flex" style="justify-content:space-between">
+          <div><strong>All modules complete.</strong> Final test is unlocked.</div>
+          <div><a href="test.html"><button>Take Final Test</button></a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 id="playerTitle">Player</h2>
+      <div class="player-wrap" id="playerWrap">
+        <div class="overlay-play" id="overlayPlay"><button id="playBtn">Play ▶︎</button></div>
+        <div class="blocker" id="blocker" title="Video interaction is disabled."></div>
+        <div id="player"></div>
+      </div>
+      <div class="footer">Controls disabled; seeking is blocked. Completion logs after the video ends.</div>
+    </div>
+  </main>
+</body>
+</html>

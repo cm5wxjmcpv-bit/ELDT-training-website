@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Final Test • Simple Training</title>
+  <link rel="stylesheet" href="assets/app.css"/>
+  <script defer src="assets/config.js"></script>
+  <script defer src="assets/auth.js"></script>
+  <script defer src="assets/test.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="card">
+      <div class="flex" style="justify-content:space-between">
+        <div>
+          <h1>Final Test</h1>
+          <div id="studentInfo" class="footer"></div>
+        </div>
+        <div><a href="modules.html"><button>Back to Modules</button></a></div>
+      </div>
+    </div>
+    <div class="card">
+      <form id="quiz" class="list">
+        <div><strong>1)</strong> You should not skip ahead in training videos because…
+          <div><label><input type="radio" name="q1" value="a"> It may cause the system to block progress and not log completion properly.</label></div>
+          <div><label><input type="radio" name="q1" value="b"> It makes the video louder.</label></div>
+        </div>
+        <div><strong>2)</strong> Logging to the Google Sheet is handled by…
+          <div><label><input type="radio" name="q2" value="a"> A Google Apps Script web app endpoint.</label></div>
+          <div><label><input type="radio" name="q2" value="b"> Magic.</label></div>
+        </div>
+        <div><strong>3)</strong> After all modules are complete…
+          <div><label><input type="radio" name="q3" value="a"> The final test unlocks.</label></div>
+          <div><label><input type="radio" name="q3" value="b"> Nothing happens.</label></div>
+        </div>
+        <div><strong>4)</strong> The anti-skip code…
+          <div><label><input type="radio" name="q4" value="a"> Prevents seeking beyond the furthest watched time.</label></div>
+          <div><label><input type="radio" name="q4" value="b"> Speeds up playback.</label></div>
+        </div>
+        <div><strong>5)</strong> This demo’s login is…
+          <div><label><input type="radio" name="q5" value="a"> Client-side only (not secure for sensitive data).</label></div>
+          <div><label><input type="radio" name="q5" value="b"> Fully secure enterprise SSO.</label></div>
+        </div>
+        <button type="submit">Submit Test</button>
+      </form>
+      <div id="result" class="hidden"></div>
+    </div>
+  </main>
+</body>
+</html>
