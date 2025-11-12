@@ -1,7 +1,7 @@
 // Basic configuration for the site
 const CONFIG = {
   siteKey: "simple-training-site-v1",
-  GAS_ENDPOINT: "https://script.google.com/macros/s/REPLACE_WITH_YOUR_DEPLOYMENT/exec",
+  GAS_ENDPOINT: "https://script.google.com/macros/s/AKfycbzb_JQsKItn7QH7HKWWVBjYYkVCjeuHNAVr9pG5XIh8jmxLQhZ4zQwLyEEVXuhig0gv/exec",
   allowAnyUser: false, // if true, any username/password accepted (still collects name/email)
   CREDENTIALS: [
     { username: "student", password: "Password123" },
