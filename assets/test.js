@@ -1,8 +1,8 @@
-// test.js - very simple quiz, unlock is handled on modules page; this logs score
+// test.js (v2) - logs score using student full name only
 (function(){
   const auth = (window.Auth && window.Auth.get && window.Auth.get()) || null;
   if (!auth) { window.location.href = "index.html"; return; }
-  document.getElementById('studentInfo').textContent = auth.name + " • " + auth.email + " • @" + auth.username;
+  document.getElementById('studentInfo').textContent = auth.name;
 
   const answers = { q1:"a", q2:"a", q3:"a", q4:"a", q5:"a" };
 
@@ -35,7 +35,7 @@
     const payload = {
       type: "score",
       timestamp: new Date().toISOString(),
-      student: { name: auth.name, email: auth.email, username: auth.username },
+      student: { name: (window.Auth.get() || {}).name },
       test: { id: CONFIG.TEST.id, title: CONFIG.TEST.title },
       score
     };

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login • Simple Training</title>
+  <title>Login • Simple Training v2</title>
   <link rel="stylesheet" href="assets/app.css"/>
   <script defer src="assets/config.js"></script>
   <script defer src="assets/auth.js"></script>
@@ -12,34 +12,31 @@
   <main class="main">
     <div class="card">
       <h1>Simple Training • Login</h1>
-      <p class="footer">Enter your details to continue.</p>
+      <p class="footer">Enter your name and password to continue.</p>
       <div class="row">
         <div>
-          <label for="name">Full name</label>
-          <input id="name" placeholder="e.g., Micah Lackey"/>
+          <label for="first">First name</label>
+          <input id="first" placeholder="e.g., Micah"/>
         </div>
         <div>
-          <label for="email">Email</label>
-          <input id="email" placeholder="e.g., micah@example.com"/>
+          <label for="last">Last name</label>
+          <input id="last" placeholder="e.g., Lackey"/>
         </div>
       </div>
       <div class="row">
-        <div>
-          <label for="username">Username</label>
-          <input id="username" placeholder="e.g., student"/>
-        </div>
         <div>
           <label for="password">Password</label>
           <input id="password" type="password" placeholder="Password"/>
         </div>
-      </div>
-      <div style="margin-top:12px">
-        <button id="loginBtn">Log In</button>
+        <div>
+          <label>&nbsp;</label>
+          <button id="loginBtn">Log In</button>
+        </div>
       </div>
     </div>
     <div class="card">
       <h3>About</h3>
-      <p>This demo uses client-side login for simplicity. Completions and scores are logged to your Google Sheet via Apps Script.</p>
+      <p>This demo uses simple client-side login (name + password). Completions and scores are logged to your Google Sheet via Apps Script, and progress is read back so students can continue on another device.</p>
     </div>
   </main>
 </body>
