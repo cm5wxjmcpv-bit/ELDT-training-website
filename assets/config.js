@@ -7,8 +7,8 @@ const CONFIG = {
     { first: "Micah", last: "Lackey", password: "Password123" }
   ],
   MODULES: [
-    { id: "mod1", title: "Module 1: Demo Safety Video", youtubeId: "dQw4w9WgXcQ" },
-    { id: "mod2", title: "Module 2: Vehicle Checks", youtubeId: "oHg5SJYRHA0" }
+    { id: "mod1", title: "Module 1: Demo Safety Video", youtubeId: "6DSvlh-zHu4" },
+    { id: "mod2", title: "Module 2: Vehicle Checks", youtubeId: "6DSvlh-zHu4" }
   ],
   TEST: { id: "final", title: "Final Test", passPercent: 70 }
 };
