@@ -39,7 +39,9 @@ label {
   font-weight: 600;
 }
 
-input, button, select {
+input,
+button,
+select {
   padding: 10px;
   border: 1px solid #cbd5e1;
   border-radius: 10px;
@@ -90,19 +92,33 @@ hr {
   display: none !important;
 }
 
-/* ========================================= */
-/*               FIXED PLAYER                */
-/* ========================================= */
+/* ===================== */
+/*   VIDEO PLAYER AREA   */
+/* ===================== */
 
 .player-wrap {
   position: relative;
   width: 100%;
-  max-width: 850px;     /* Change this number to adjust width */
-  margin: 0 auto;       /* Centers the whole player */
+  max-width: 850px;      /* overall player width */
+  margin: 0 auto;        /* center the player box */
   aspect-ratio: 16 / 9;
   background: #000;
   border-radius: var(--radius);
   overflow: hidden;
+
+  /* make inner content (iframe) center perfectly */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* force the YouTube iframe to fill and center */
+.player-wrap iframe,
+.player-wrap #player {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .blocker {
