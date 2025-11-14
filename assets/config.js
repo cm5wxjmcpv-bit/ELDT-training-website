@@ -1,7 +1,7 @@
 // Site config (v2 - name+password login)
 const CONFIG = {
   siteKey: "simple-training-site-v2",
-  GAS_ENDPOINT: "https://script.google.com/macros/s/AKfycbwRSkyCEsT8SUZLa2wff4gvxegzMYh6XUXKKqJbiDmPILP-BVJuyou4T2rOSbWK-GS_/exec",
+  GAS_ENDPOINT: "https://script.google.com/macros/s/AKfycbzW4mMDSm6FS3NeQxrkL6GvLtDC1twiqBcQf-DDLE0VsB4KT3XzBV1qlUlyk_dNhJaX/exec",
   allowAnyUser: false,
   USERS: [
     { first: "Micah", last: "Lackey", password: "Password123" }
